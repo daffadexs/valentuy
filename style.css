@@ -1,0 +1,64 @@
+body{
+    margin:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+  }
+  
+  .left,.right{
+    display:inline-block
+  }
+  .left{
+    width:170px;
+    height:239px;
+    margin-right:-4px
+  }
+  
+  div>div{
+    display:block;
+    height:34px;
+  }
+  div>div>div{
+    width:30px;
+    height:30px;
+    background-color:red;
+    display:inline-block;
+    float:right;
+    margin:2px;
+  }
+  div.right>div>div{
+    float:left;
+  }
+
+  .music-controls{
+    position:fixed;
+    bottom:18px;
+    left:18px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding:8px 10px;
+    border-radius:6px;
+    display:flex;
+    gap:8px;
+    align-items:center;
+    z-index:1000;
+  }
+  .music-controls button{
+    background:#ff6b6b;
+    border:none;
+    color:#fff;
+    padding:6px 10px;
+    border-radius:4px;
+    cursor:pointer;
+  }
+  .music-controls input[type="file"]{
+    display:block;
+  }
+  .music-controls input[type="range"]{
+    width:100px;
+  }
+  .file-label{
+    cursor:pointer;
+    font-size:12px;
+  }
